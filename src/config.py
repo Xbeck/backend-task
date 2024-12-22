@@ -24,19 +24,19 @@ class ConfigSettings(BaseSettings):
         )
         return values
     
-    TEST_DB_HOST: str
-    TEST_DB_PORT: int
-    TEST_DB_USER: str
-    TEST_DB_PASS: str
-    TEST_DB_NAME: str
-    TEST_DATABASE_URL: Optional[str] = None
+    # TEST_DB_HOST: str
+    # TEST_DB_PORT: int
+    # TEST_DB_USER: str
+    # TEST_DB_PASS: str
+    # TEST_DB_NAME: str
+    # TEST_DATABASE_URL: Optional[str] = None
 
-    @model_validator(mode="before")
-    def get_test_dataabase_url(cls, values):
-        values['TEST_DATABASE_URL'] = (
-            f"postgresql+asyncpg://{values['TEST_DB_USER']}:{values['TEST_DB_PASS']}@{values['TEST_DB_HOST']}:{values['TEST_DB_PORT']}/{values['TEST_DB_NAME']}"
-        )
-        return values
+    # @model_validator(mode="before")
+    # def get_test_dataabase_url(cls, values):
+    #     values['TEST_DATABASE_URL'] = (
+    #         f"postgresql+asyncpg://{values['TEST_DB_USER']}:{values['TEST_DB_PASS']}@{values['TEST_DB_HOST']}:{values['TEST_DB_PORT']}/{values['TEST_DB_NAME']}"
+    #     )
+    #     return values
 
     SMTP_HOST: str
     SMTP_PORT: int

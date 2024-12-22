@@ -1,3 +1,4 @@
+import os
 import time
 
 from fastapi import FastAPI, Request
@@ -12,6 +13,7 @@ from fastapi_cache.backends.redis import RedisBackend
 from fastapi_cache.decorator import cache
 from redis import asyncio as aioredis
 from sqladmin import Admin
+import uvicorn
 
 from src.admin.auth import authentication_backend
 from src.admin.views import UserAdmin, RoleAdmin, StadiumAdmin, BookingsAdmin
@@ -93,3 +95,7 @@ async def add_process_time_header(request: Request, call_next):
     # })
     print(process_time)
     return response
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
