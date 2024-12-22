@@ -3,6 +3,7 @@ import time
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 # for redis
@@ -45,6 +46,11 @@ app = FastAPI(
     version="1.0.0",
     # lifespan=lifespan
 )
+
+@app.get("/")
+async def read_root():
+    return RedirectResponse(url="/docs")
+
 
 app.include_router(router_auth)
 app.include_router(router_admin)
