@@ -96,5 +96,6 @@ async def add_process_time_header(request: Request, call_next):
 
 app.mount("/static", StaticFiles(directory="src/static"), "static")
 
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
