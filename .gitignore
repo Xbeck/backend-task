@@ -1,0 +1,10 @@
+__pycache__
+__pycache__/*
+.vs_code
+
+.env
+.env-non-dev
+.env-render
+
+Pipfile
+Pipfile.lock

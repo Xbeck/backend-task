@@ -1,0 +1,5 @@
+name;address;contact;images;price_per_hour;latitude;longitude;description;user_id
+Stadion 1;G'allaorol tum. G'allaorol shahar;+998971234567;[1];50000;40.011972;67.589323;Mini stadion Nomer 1;2
+Stadion 2;G'allaorol tum. Moltop;+998977654321;[2];55000;39.973715;67.503598;Mini stadion Nomer 2;2
+Stadion 3;G'allaorol tum. Marjonbuloq;+998972221122;[3];60000;39.934110;67.425295;Mini stadion Nomer 3;2
+Stadion 4;G'allaorol tum. Bagarni;+998971112233;[4];60000;39.936838;67.458061;Mini stadion Nomer 4;2

@@ -1,0 +1,7 @@
+email;hashed_password;registred_at;role_id;latitude;longitude
+admin@admin.com;admin;13-11-2024;3;39.934467;67.424750
+landman@landman.com;landman;14-11-2024;2;40.011972;67.589323
+test@test.com;test;20-11-2024;1;39.934467;67.424750
+string@string.com;string;20-11-2024;1;39.942873;67.463346
+user@user.com;user;15-11-2024;1;39.969733;67.505003
+guest@guest.com;guest;16-11-2024;1;40.019740;67.584589

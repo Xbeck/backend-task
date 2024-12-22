@@ -1,0 +1,4 @@
+role_name;permissions
+user;{"create":true,"read":true,"update":false,"delete":false}
+landman;{"create":true,"read":true,"update":true,"delete":false}
+admin;{"create":true,"read":true,"update":true,"delete":true}
