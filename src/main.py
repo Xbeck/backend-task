@@ -68,8 +68,6 @@ app.add_middleware(
                    "Authorization"],
 )
 
-app.mount("/static", StaticFiles(directory="src/static"), "static")
-
 
 admin = Admin(
     app,
@@ -96,6 +94,7 @@ async def add_process_time_header(request: Request, call_next):
     print(process_time)
     return response
 
+app.mount("/static", StaticFiles(directory="src/static"), "static")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
