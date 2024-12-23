@@ -47,9 +47,6 @@ app = FastAPI(
     # lifespan=lifespan
 )
 
-@app.get("/")
-async def read_root():
-    return RedirectResponse(url="/docs")
 
 
 app.include_router(router_auth)
